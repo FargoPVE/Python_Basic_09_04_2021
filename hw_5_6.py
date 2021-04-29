@@ -21,4 +21,5 @@ with open("text_6.txt", "r") as f_o:
         name, num = line.split(":")
         name_sum = sum(map(int, "".join([i for i in num if i == " " or i.isdigit()]).split()))
         my_dict[name] = name_sum
+
 print(my_dict)
